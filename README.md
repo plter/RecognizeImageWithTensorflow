@@ -1,1 +1,2 @@
 # RecognizeImageWithTensorflow
+为中关村教育集团制作的图像识别实例教程配套源码

@@ -1,0 +1,20 @@
+{{extend "layout.html"}}
+{{=form}}
+{{if rec_result:}}
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>识别结果</th>
+        <th>匹配度</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{for r in rec_result:}}
+    <tr>
+        <td>{{=T(r["human_string"])}}</td>
+        <td>{{=r["score"]}}</td>
+    </tr>
+    {{pass}}
+    </tbody>
+</table>
+{{pass}}
